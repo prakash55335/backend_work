@@ -1,7 +1,8 @@
 import axios from 'axios'
 
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || `http://${window.location.hostname}:8000`,
+  // Hardcoded your working live Railway URL directly as the fallback configuration
+  baseURL: import.meta.env.VITE_API_URL || 'https://railway.app',
   headers: {
     'Content-Type': 'application/json',
   },
